@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOODFINDA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        body {
+            background-color:#cdcaca;
+            padding: 0%;
+            margin: 0%;
+            overflow-x: hidden;
+
+        }
+
+        .body {
+            background-image: url(background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.7;
+            background-repeat:repeat-y;
+        }
+
+
+        .first {
+            display: inline-flex;
+            background-color: #8eb50b;
+            width: 100%;
+            gap: 200px;
+            height: 60px;
+        }
+
+        .first img {
+            height: 50px;
+            width: 200px;
+        }
+
+        .call {
+            margin-left: 200px;
+            padding: 20px 30px;
+            font-size: large;
+            background-color: #252525;
+        }
+
+        .first a {
+            text-decoration: none;
+            color: white;
+
+
+        }
+
+        .email {
+            padding: 20px 30px;
+            font-size: large;
+            background-color: #252525;
+
+        }
+
+        .navbar {
+            background-color: #252525;
+            width: 50%;
+            margin-left: 330px;
+            padding: 20px 30px;
+            font: 14px Sen, sans-serif;
+
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            margin-left: 20px;
+
+        }
+
+        a:hover {
+            color: #8eb50b;
+        }
+
+        .second {
+            background-color: #000000;
+            height: 100%;
+        }
+
+        .sec2 {
+            color: white;
+            margin-left: 500px;
+        }
+
+        .banner {
+            width: 50%;
+            margin: 0%;
+            font-size: 50px;
+            padding-top: 100px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 70px;
+
+
+        }
+
+        .banner1 {
+            width: 35%;
+            margin: 30px 75px;
+            font-size: 50px;
+            color: #8eb50b;
+            text-align: center;
+            background-color: #ffffff;
+            border-radius: 7px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+        }
+
+        .sec3 {
+            display: grid;
+            grid-template-columns: 25% auto;
+            margin-top: 70px;
+        }
+
+        ::placeholder {
+            color: black;
+        }
+
+        .quick {
+            color: #fff;
+            margin: 50px 570px;
+            font: 50px sen, sans-serif;
+            font-weight: bold;
+        }
+
+        .sec4 {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            padding: 30px 80px;
+            margin-left: 70px;
+        }
+
+        .s2same {
+            border: 2px solid white;
+            padding: 20px;
+            background-color: transparent;
+            width: 100px;
+            height: 100px;
+        }
+
+        .sec5 {
+            color: #fff;
+            padding: 20px 30px;
+            font-size: 20px;
+
+        }
+
+        .sec6:hover {
+            background-color: orange !important;
+
+        }
+
+        .sec5:hover {
+            color: orangered;
+        }
+
+        .navbar a:hover {
+            color: #8eb50b;
+        }
+
+        .food {
+            color: #fff;
+            margin: 80px 130px;
+            font: 50px sen, sans-serif;
+            font-weight: bold;
+            font-weight: 800;
+        }
+
+        .grid4 {
+            display: grid;
+            grid-template-columns: 40% auto;
+            gap:40px;
+        }
+        .grid4img{
+            text-align: right;
+        }
+        .grid5{
+            margin-top: 80px;
+            display: grid;
+            grid-template-columns: 50% auto;
+            color:white;
+            background-color: #8eb50b;
+            text-align: justify;
+            
+        }
+        .grid51{
+            padding:50px 90px;
+            margin-left: 50px;
+        }
+        .grid6{
+            display:grid;
+            grid-template-columns: auto auto auto;
+            padding:5px 70px;
+            margin-left:90px;
+        }
+        .grid61{
+            color:#8eb50b;
+            font-size: 20px;
+            
+
+        }
+        .grid62{
+            height:100px;
+            width:300px;
+            border:2px solid white;
+            color:white;
+            text-align: justify;
+            line-height: 1.5;
+            padding: 30px 10px 10px 10px;
+        }
+        .form{
+            background-image: url(background.jpg);
+            background-repeat: no-repeat;
+            /* background-size: cover; */
+            opacity: 1;
+            height:100%;
+            background-position: center;
+        }
+        .grid7{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            color:white;
+            padding: 30px 50px;
+            row-gap: 5px;
+            margin-left: 50px;
+            
+        }
+        .two{
+            font:30px sen,sans-serif;
+            font-weight: bold;
+        }
+        .grid7 a{
+            text-decoration: none;
+            color:white;
+        }
+        a:hover{
+            color:#8eb50b;
+        }
+        .footer{
+            background-color: #8eb50b;
+            color:white;
+            line-height: 5;
+            text-align: center;
+        }
+        .download:hover{
+            background-color: black !important;
+            color:white !important;
+        }
+        .trans1{
+            transform: matrix(1,-0.5,0,1,1,1);
+        }
+        .trans2{
+            transform: matrix(1,0.5,0,1,1,1);
+        }
+        .rotate{
+            transform: rotate(-45deg);
+        }
+        .rotate1{
+            transform: rotate(45deg);
+            
+        }
+        .skew{
+            transform:skew(45deg,45deg);
+            animation-name: skew ;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes skew{
+            from{
+
+            }
+            to{
+                transform:skew(0deg,0deg) ;
+            }
+        }
+        .box{
+            height:400px;
+            width:400px;
+            transform: translate(-50% -50%);
+            position: absolute;
+            background-color: transparent;
+        }
+        .box .shape{
+            height:200px;
+            width:200px;
+            border-radius: 80%;
+            left:50%;
+
+        }
+        .shape:first-child{
+            background: linear-gradient(#8eb50b,#252525,black);
+            margin-left: 100px;
+            position: absolute;
+            z-index: -1;
+        }
+        .shape:last-child{
+            background: linear-gradient(#252525,black,#8eb50b,black);
+            margin-top: 300px;
+            margin-left: 100px;
+            position: absolute;
+            z-index: -1;
+        }
+       
+    </style>
+</head>
+
+<body class="body">
+    <div class="first">
+        <div class="call"><i class="fa-solid fa-phone" style="color:white;"></i>&nbsp;&nbsp;&nbsp;<a
+                href="">Call:+011-29292929</a></div>
+        <div><a href=""><img src="foodfinda.jpg"></a></div>
+        <div class="email"><a href=""><i class="fa-sharp fa-solid fa-envelope"
+                    style="color:white;"></i>&nbsp;&nbsp;&nbsp;Email:Demo@gamil.com</a></div>
+    </div>
+    <div class="second">
+        <div class="navbar">
+            <a href="" style="margin-left: 120px;">Home</a>
+            <a href="">Service</a>
+            <a href="">About</a>
+            <a href="">Blog</a>
+            <a href="">shop</a>
+            <a href="">contact</a>
+            <a href="">Login</a>
+        </div>
+        <div class="sec2">
+            <h1 class="banner">Find the best resorents cafes and bar in</h1>
+            <h1 class="banner1">Your City</h1>
+        </div>
+        <div class="sec3">
+            <div class="acivity"><button
+                    style="left:200px;position: absolute;height:55px;width:200px;font-size: 30px;color:#8eb50b;background-color: #ffffff;">All
+                    Catogory</button></div>
+            <div class="text"><input type="text" placeholder="search here..."
+                    style="width:70%;height:50px;font-size: 20px;margin-left: 50px;"></div>
+        </div>
+        <button class="sec6"
+            style="background-color: #8eb50b;color:#ffffff;margin-left: 45%;margin-top: 50px;font-size: 20px;padding:10px 10px;">Order
+            Now</button>
+        <h1 class="quick">Quick Searches</h1>
+        <div class="sec4">
+            <div><img src="q11.png" class="s2same  rotate"></div>
+            <div><img src="q22.png" class="s2same skew"></div>
+            <div><img src="q33.png" class="s2same trans1"></div>
+            <div><img src="q44.png" class="s2same trans2"></div>
+            <div><img src="q55.png" class="s2same skew"></div>
+            <div><img src="q66.png" class="s2same rotate1"></div>
+            <div class="sec5">Breakfast</div>
+            <div class="sec5">Delivery</div>
+            <div class="sec5" style="margin-left: 10px;">Dinner</div>
+            <div class="sec5" style="margin-left: 10px;">Coffee</div>
+            <div class="sec5" style="margin-left: 10px;">Alcohol</div>
+            <div class="sec5">Diningtable</div>
+            <div><button class="sec6"
+                    style="background-color: #8eb50b;color:#ffffff;font-size: 20px;padding:10px 25px;margin-left: 5px;">See
+                    More</button></div>
+            <div><button class="sec6"
+                    style="background-color: #8eb50b;color:#ffffff;font-size: 20px;padding:10px 25px;">See
+                    More</button></div>
+            <div><button class="sec6"
+                    style="background-color: #8eb50b;color:#ffffff;font-size: 20px;padding:10px 25px;">See
+                    More</button></div>
+            <div><button class="sec6"
+                    style="background-color: #8eb50b;color:#ffffff;font-size: 20px;padding:10px 25px;">See
+                    More</button></div>
+            <div><button class="sec6"
+                    style="background-color: #8eb50b;color:#ffffff;font-size: 20px;padding:10px 25px;">See
+                    More</button></div>
+            <div><button class="sec6"
+                    style="background-color: #8eb50b;color:#ffffff;font-size: 20px;padding:10px 25px;">See
+                    More</button></div>
+
+        </div>
+        <h1 class="food">Collection Food In City</h1>
+        <div class="grid4">
+            <div class="grid4img"><img src="food1.jpg"></div>
+            <div style="color:white;"><span style="font: 30px sens,sans-serif;font-weight: bold;">This Week goingLong established</span><br><br><br><br><span style="text-align: justify;"> fact that a reader will be distracted by the readable content of a page
+                when looking at its layout.<br> The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                of letters,<br> as opposed</span><br><br><br><br><span><button class="sec6"
+                    style="background-color: #8eb50b;color:#ffffff;font-size: 20px;padding:10px 25px;">Read More</button></span></div>
+    
+            <div  class="grid4img"><img src="food2.jpg"></div>
+            <div style="color:white;"><span style="font:30px sens,sans-serif;font-weight: bold;">Just Delivery Food</span><br><br><br><br><span style="text-align: justify;width:50%;"> fact that a reader will be distracted by the readable content of a page
+                when looking at its layout.<br> The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                of letters,<br> as opposed</span><br><br><br><br><span></span><button class="sec6"
+                style="background-color: #8eb50b;color:#ffffff;font-size: 20px;padding:10px 25px;">Read More</button></div>
+    
+            <div  class="grid4img"><img src="food3.jpg"></div>
+            <div style="color:white;"><span style="font:30px sens,sans-serif;font-weight: bold;">This Week goingLong established</span><br><br><br><br><span style="text-align: justify;"> fact that a reader will be distracted by the readable content of a page
+                when looking at its layout.<br> The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                of letters,<br> as opposed</span><br><br><br><br><span></span><button class="sec6"
+                style="background-color: #8eb50b;color:#ffffff;font-size: 20px;padding:10px 25px;">Read More</button></div>
+    
+            </div>
+            <div class="grid5">
+                <div class="grid51"><h1 style="color:white;font-size: 50px;font-weight: bold;">Get The</h1>
+                <h1 style="color:black!important;font-size: 50px;font-weight: bold;">Food Finda App</h1>
+                <h5>Long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                </h5><br>
+                <span><img src="go.jpg"></span>
+                <span><img src="app.jpg"></span><br><br><br>
+                <button class="download" style="background-color:white;color:black;font-size:15px;padding:10px 25px;border: 2px solid white;">Download Now</button>
+        
+                </div>
+                <div style="padding-top: 80px;">
+                    <img src="mobile.jpg">
+                </div>
+        
+            </div>
+        </div>
+            <h1 style="font:50px sen,sans-serif;color:white;margin: 120px 570px;font-weight: bold;">Customer Says</h1>
+        <div class="grid6">
+            <div class="grid61">Loliy Mar</div>
+            <div class="grid61">Den Mar</div>
+            <div class="grid61">Jhonsen Mar</div>
+            <div class="grid62">Now use Lorem Ipsum as their default model text, and a search for 'loremnow use Lorem Ipsum as their default model text, and a search for 'lorem</div>
+            <div class="grid62">Now use Lorem Ipsum as their default model text, and a search for 'loremnow use Lorem Ipsum as their default model text, and a search for 'lorem</div>
+            <div class="grid62">Now use Lorem Ipsum as their default model text, and a search for 'loremnow use Lorem Ipsum as their default model text, and a search for 'lorem</div>
+        </div>
+        <br><button class="sec6"
+                style="background-color: #8eb50b;color:#ffffff;font-size: 20px;padding:10px 25px;margin-left:670px;"><i class="fa-solid fa-arrow-left"></i></button>
+        
+        <button class="sec6"
+                style="background-color:white;color:black;font-size: 20px;padding:10px 25px;"><i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+   <div class="box">
+    <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+<div class="form">
+    <h1 style="font:50px sen,sans-serif;color:white;margin-left: 590px;">Get in Touch</h1>
+    <h1><input type="text" placeholder="Name"style="width:50%;line-height:2;margin-left:340px;padding:5px;"></h1>
+    <h1><input type="number" placeholder="Mobile Number" style="width:50%;line-height:2;margin-left:340px;padding: 5px;"></h1>
+    <h1><input type="email" placeholder="Email" style="width:50%;line-height:2;margin-left:340px;padding: 5px;"></h1>
+    <h1><input type="text" placeholder="Message" style="width:50%;line-height:4;margin-left:340px;padding:5px;"></h1>
+    <button class="sec6"
+                style="background-color: #8eb50b;color:#ffffff;font-size: 20px;padding:10px 25px;margin-left: 690px;">Send</button>
+
+    <h1 style="font:40px sen,sans-serif;background-color: white;width:50%;margin-left: 340px;line-height:3;font-weight: bold;">ORDER BEST FOOD AT TIME<button class="sec6" style="background-color: #8eb50b;color:white;font-size: 20px;padding:10px;border: 2px solid white;margin-left:40px;">ORDER NOW</button></h1>
+    
+    <div class="grid7">
+        <div class="two">FOODFINDA</div>
+        <div class="two">NAVIGATION</div>
+        <div class="two">CONTACT INFO</div>
+        <div class="two">DISCOVER</div>
+        <div>t is a long established fact that a</div>
+        <div><a href="">Home</a></div>
+        <div style="color: #8eb50b;">Office Address</div>
+        <div>Help</div>
+        <div>t is a long established fact that a</div>
+        <div><a href="">About</a></div>
+        <div>Lauram,ispum New York,Ny36524</div>
+        <div>How its Work</div>
+        <div>t is a long established fact that a</div>
+        <div><a href="">Location</a></div>
+        <div style="color:#8eb50b;">Customer Service:</div>
+        <div>Subscribe</div>
+        <div>t is a long established fact that a</div>
+        <div><a href="">Services</a></div>
+        <div>(+01-112242266)</div>
+        <div>ContactUs</div>
+        <div></div>
+        <div><a href="">Featurs</a></div>
+        <div>demogamil.com</div>
+        <div style="font-size: 25px;"><i class="fa-brands fa-facebook" style="color:#8eb50b"></i>&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-instagram" style="color:#8eb50b"></i>&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-twitter" style="color:#8eb50b"></i>&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-linkedin" style="color:#8eb50b"></i></div>
+        </div>
+    </div>
+    <div class="footer">
+        <h4>2020 All Rights Reserved. Design by Free html Templates</h4>
+        </div>
+</body>
+</html>
